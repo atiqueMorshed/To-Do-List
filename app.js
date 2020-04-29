@@ -15,7 +15,10 @@ const _ = require("lodash");
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-mongoose.connect("mongodb+srv://AtiqueMorshedC0:44kJChh110R4j4.@cluster0-dom0m.mongodb.net/toDoListDB", {useNewUrlParser: true , useUnifiedTopology: true });
+//////////////////////////////////////////////////////
+// USERNAME / PASSWORD EXCLUDED FOR SECURITY PURPOSES
+//////////////////////////////////////////////////////
+mongoose.connect("mongodb+srv://U:P@cluster0-dom0m.mongodb.net/toDoListDB", {useNewUrlParser: true , useUnifiedTopology: true });
 mongoose.set("useFindAndModify", false);
 ////////////////////////////////// DB /////////////////////////////////////
 // Here Schema: itemsSchema, Model: Item, Collection/ Table: items (auto generation by Model- Item -> items), Documents/ Rows: defaultItems (3)
